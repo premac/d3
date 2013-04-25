@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <!--<meta http-equiv="refresh" content="2">-->
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+    <style>
+    .chart rect {
+        stroke: white;
+        fill: steelblue;
+    }
+
+    .chart text {
+        font: 10px sans-serif;
+        fill: white;
+    }
+
+    .chart text.rule {
+        font: 10px sans-serif;
+        fill: black;
+    }
+
+    </style>
+
+<script type="text/javascript" language="javascript">
+
+
+
+window.onload = function() {
+
+    var data = [4, 8, 15, 16, 23, 42, 567];
+
+    var data = {
+        "2013-04-26T06:05:00.000Z":
+        {
+            "total_size":400,
+                "average_response_time":16.666666666666668,
+                "operation_count":12,
+                "write_ratio":0.5,
+                "hit_ratio":0.3333333333333333
+        },
+        "2013-04-26T06:05:00.000Z":
+        {
+            "total_size":"400",
+                "average_response_time":16.666666666666668,
+                "operation_count":12,
+                "write_ratio":0.5,
+                "hit_ratio":0.3333333333333333
+        }
+    }
+
+
+    var chart = d3.select("body").append("svg")
+            .attr("class", "chart")
+            .attr("width", "440")
+            .attr("height", 140)
+            .append("g")
+            .attr("transform", "translate(10,15)");
+
+    var x = d3.scale.linear()
+            .domain([0, d3.max(data)])
+            .range([420, 0]);
+
+    var y = d3.scale.ordinal()
+            .domain(data)
+            .rangeBands([0, 120]);
+
+
+    chart.selectAll("rect")
+            .data(data)
+            .enter().append("rect")
+            .attr("y", y)
+            .attr("width", x)
+            .attr("height", y.rangeBand);
+
+    chart.selectAll("text")
+            .data(data)
+            .enter()
+            .append("text")
+            .attr("x", x)
+            .attr("y", function(d) { return y(d) + y.rangeBand() / 2; })
+            .attr("dx", -3) // padding-right
+            .attr("dy", ".35em") // vertical-align: middle
+            .attr("text-anchor", "end") // text-align: right
+            .text(String);
+
+    chart.selectAll("line")
+            .data(x.ticks(10))
+            .enter().append("line")
+            .attr("x1", x)
+            .attr("x2", x)
+            .attr("y1", 0)
+            .attr("y2", 120)
+            .style("stroke", "#ccc");
+
+    chart.selectAll(".rule")
+            .data(x.ticks(10))
+            .enter().append("text")
+            .attr("class", "rule")
+            .attr("x", x)
+            .attr("y", 0)
+            .attr("dy", -3)
+            .attr("text-anchor", "middle")
+            .text(String);
+
+};
+</script>
+
+</head>
+
+<body>
+
+</body>
+</html>
