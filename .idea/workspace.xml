@@ -27,10 +27,10 @@
     <list default="true" id="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" name="Default" comment="" />
     <ignored path="d3statistics.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366902758688" ignored="false" />
+    <file path="/index.html" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366979013335" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/util/src/com/netledger/util/proxy/NLProxyMethodMetaData.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366885931769" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/util/src/com/netledger/util/proxy/NLAbstractInvalidatableLazyInitializer.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366885931769" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/htdocs/WEB-INF/web.xml" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366888219556" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/htdocs/WEB-INF/web.xml" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366974791309" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/src/com/netledger/app/center/myroles.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366885931769" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/META-INF/application.xml" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366888219556" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/util/src/com/netledger/util/proxy/NLAbstractLazyInitializer.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366885931769" ignored="false" />
@@ -40,6 +40,72 @@
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/htdocs/WEB-INF/xml/samples/PayTrust/ModUser.xml" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366888219556" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/htdocs/WEB-INF/solr/lang/fieldtype_hy.xml" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366888219556" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/htdocs/WEB-INF/keys/PerquestProdKeys.xml" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366888219556" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/build-dist.xml" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366974695508" ignored="false" />
+    <file path="/build-dist.xml" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366974695508" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/scripting/cache/Value.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366965220082" ignored="false" />
+    <file path="/Value.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366965212704" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/test/src/com/netledger/core/scripting/cache/CoherenceSuiteScriptCacheTest.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366965391621" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/scripting/cache/CacheMeta.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366965391621" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/test/src/com/netledger/core/scripting/cache/CoherenceSuiteScriptCacheIntegrationTest.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366965391621" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/scripting/cache/SuiteScriptCache.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366965391621" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/scripting/cache/CacheValue.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366970610796" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/scripting/cache/CoherenceSuiteScriptCache.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366973494958" ignored="false" />
+    <file path="/a.dummy" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366968398238" ignored="false" />
+    <file path="/fragment.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366973154960" ignored="false" />
+    <file path="/Dummy.txt" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366969308587" ignored="false" />
+    <file path="/CacheValue.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366970585027" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/scripting/cache/CacheKey.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366973012570" ignored="false" />
+    <file path="/CacheKey.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366970597362" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/scripting/cache/OccupiedCacheSize.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366973455616" ignored="false" />
+    <file path="/OccupiedCacheSize.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366973453841" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/scripting/cache/OccupiedCacheSizeTest.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366973153279" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/test/src/com/netledger/core/scripting/cache/OccupiedCacheSizeTest.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366973406962" ignored="false" />
+    <file path="/OccupiedCacheSizeTest.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366973322636" ignored="false" />
+    <file path="/CoherenceSuiteScriptCache.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366973493076" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/scripting/cache/statistics/StatisticRepository.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366980660205" ignored="false" />
+    <file path="/StatisticRepository.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366979301698" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/requesthandler/NLServlet.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366985690107" ignored="false" />
+    <file path="/NLServlet.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366985405494" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/htdocs/javascript/NLUIWidgets.jsp" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/src/com/netledger/app/crm/calendar/NLCalendarDetail.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/conf/WEB-INF/include/web.xml" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/test/src/com/netledger/app/webservices/qa/NLWsQAWorkOrderCompletionTest.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/src/com/netledger/app/common/search/NLTransactionSearchPersonality.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/src/com/netledger/app/common/scripting/NLSuiteScriptEngine.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/database/sql/migrates/2013_1_0_80/migrate_control.xml" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/src/com/netledger/app/common/search/NLItemSearchPersonality.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/src/com/netledger/app/accounting/transactions/inventory/costing/NLInventoryCostingUtil.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/database/sql/migrates/2013_1_0_76/migrate_control.xml" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/test/src/com/netledger/app/common/records/SSInventoryAdjustment.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/src/com/netledger/app/accounting/transactions/inventory/costing/NLStandardCostingUtil.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/database/src/com/netledger/database/NLSQLBuilder.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/test/src/com/netledger/common/util/GetTypedParameterTest.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/test/src/com/netledger/app/common/records/SSInventoryWorksheet.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/test/src/com/netledger/app/mobile/utils/RequestParams.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/elements/compound/NLSimpleEntryForm.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/database/src/com/netledger/database/NLConnectionUtil.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/src/com/netledger/app/accounting/transactions/NLInvAdjstEntryForm.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/record/NLRecordSublist.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/src/com/netledger/app/accounting/transactions/NLBuildRecordBase.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/src/com/netledger/app/setup/assistants/nsimport/NLImportFieldValuePopupRenderer.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/elements/compound/NLEntryForm.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/elements/simple/NLField.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/src/com/netledger/app/common/paymentprocessing/creditcard/NLWorldPayAPI.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/test/resource/odbc/metadata/odbc_metadata_golden.xml" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/elements/NLPageElement.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/elements/compound/NLList.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/database/sql/migrates/2013_2_0/migrate_control.xml" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/elements/compound/NLListColumn.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/test/src/com/netledger/app/common/records/SSAssemblyBuild.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/common/src/com/netledger/common/communication/NLHttpServletRequest.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/test/src/com/netledger/app/common/records/SSAssemblyUnbuild.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/requesthandler/AbstractRequestParameters.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/src/com/netledger/app/accounting/transactions/billsalesorder/BulkOrderRequest.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/test/src/com/netledger/app/reporting/regress/metadata2sql/expectedsql/reportDef_-195.xml" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/test/src/com/netledger/app/reporting/regress/metadata2sql/expectedsql/reportDef_-196.xml" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/test/src/com/netledger/app/reporting/regress/metadata2sql/expectedsql/reportDef_-197.xml" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/src/com/netledger/app/accounting/transactions/shipping/usps/NLUspsItemShipRecord.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/requesthandler/NLFormRequestHandler.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +169,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="10" selection-start="887" selection-end="887" vertical-scroll-proportion="0.31514478">
+            <state line="54" column="60" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.5449621">
               <folding />
             </state>
           </provider>
@@ -433,7 +499,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="10" selection-start="887" selection-end="887" vertical-scroll-proportion="0.31514478">
+        <state line="54" column="60" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.5449621">
           <folding />
         </state>
       </provider>

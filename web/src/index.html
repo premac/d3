@@ -29,7 +29,8 @@
 
 window.onload = function() {
 
-    var data = [4, 8, 15, 16, 23, 42, 567];
+
+    //http://mbostock.github.io/d3/tutorial/bar-2.html
 
     var data = {
         "2013-04-26T06:05:00.000Z":
@@ -50,6 +51,21 @@ window.onload = function() {
         }
     }
 
+    alert(Math.max.apply(Math, array.map(function(o)))
+    Math.max.apply(Math,array.map(function(o){return o.y;}))
+
+    )
+
+    var w = 20,
+        h = 300;
+
+    var x = d3.scale.linear()
+        .domain([0, 1])
+        .range([0, w]);
+
+    var y = d3.scale.linear()
+        .domain([0, 100])
+        .rangeRound([0, h]);
 
     var chart = d3.select("body").append("svg")
             .attr("class", "chart")
