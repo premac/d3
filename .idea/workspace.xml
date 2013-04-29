@@ -27,12 +27,12 @@
     <list default="true" id="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" name="Default" comment="" />
     <ignored path="d3statistics.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366979013335" ignored="false" />
+    <file path="/index.html" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1367245692862" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/util/src/com/netledger/util/proxy/NLProxyMethodMetaData.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366885931769" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/util/src/com/netledger/util/proxy/NLAbstractInvalidatableLazyInitializer.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366885931769" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/htdocs/WEB-INF/web.xml" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366974791309" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/htdocs/WEB-INF/web.xml" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1367236386867" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/src/com/netledger/app/center/myroles.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366885931769" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/META-INF/application.xml" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366888219556" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/META-INF/application.xml" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1367236386867" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/util/src/com/netledger/util/proxy/NLAbstractLazyInitializer.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366885931769" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/src/com/netledger/app/login/NLAppLogin.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366885931769" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/test/src/com/netledger/internal/admin/coherence/SuiteScriptCacheJsonMapperTest.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366885958442" ignored="false" />
@@ -52,18 +52,18 @@
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/scripting/cache/CoherenceSuiteScriptCache.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366973494958" ignored="false" />
     <file path="/a.dummy" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366968398238" ignored="false" />
     <file path="/fragment.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366973154960" ignored="false" />
-    <file path="/Dummy.txt" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366969308587" ignored="false" />
+    <file path="/Dummy.txt" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1367237657053" ignored="false" />
     <file path="/CacheValue.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366970585027" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/scripting/cache/CacheKey.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366973012570" ignored="false" />
     <file path="/CacheKey.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366970597362" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/scripting/cache/OccupiedCacheSize.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366973455616" ignored="false" />
-    <file path="/OccupiedCacheSize.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366973453841" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/scripting/cache/OccupiedCacheSize.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1367226126617" ignored="false" />
+    <file path="/OccupiedCacheSize.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1367226123888" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/scripting/cache/OccupiedCacheSizeTest.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366973153279" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/test/src/com/netledger/core/scripting/cache/OccupiedCacheSizeTest.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366973406962" ignored="false" />
     <file path="/OccupiedCacheSizeTest.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366973322636" ignored="false" />
     <file path="/CoherenceSuiteScriptCache.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366973493076" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/scripting/cache/statistics/StatisticRepository.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366980660205" ignored="false" />
-    <file path="/StatisticRepository.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366979301698" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/scripting/cache/statistics/StatisticRepository.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1367239241581" ignored="false" />
+    <file path="/StatisticRepository.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1367239214072" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/requesthandler/NLServlet.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366985690107" ignored="false" />
     <file path="/NLServlet.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366985405494" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/htdocs/javascript/NLUIWidgets.jsp" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
@@ -106,6 +106,15 @@
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/test/src/com/netledger/app/reporting/regress/metadata2sql/expectedsql/reportDef_-197.xml" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/src/com/netledger/app/accounting/transactions/shipping/usps/NLUspsItemShipRecord.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/requesthandler/NLFormRequestHandler.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366987233532" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/jsp/lib/jsp-impl.jar!/standardSchemas/jspdirectives2_1.xsd" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1367224155871" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/jsp/lib/jsp-impl.jar!/standardSchemas/jspxml2.xsd" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1367224155871" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/scripting/cache/statistics/StatisticAggregate.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1367229958395" ignored="false" />
+    <file path="/StatisticAggregate.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1367229939323" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/test/src/com/netledger/core/scripting/cache/statistics/StatisticRepositoryTest.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1367236165637" ignored="false" />
+    <file path="/StatisticRepositoryTest.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1367236164185" ignored="false" />
+    <file path="/SuiteScriptCacheStats.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1367236220944" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/src/com/netledger/internal/admin/coherence/SuiteScriptCacheStats.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1367236225556" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/test/src/com/netledger/app/mobile/feature/savedsearches/NLMobileGetSavedSearchTest.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1367236104112" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +178,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="60" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.5449621">
+            <state line="86" column="0" selection-start="2355" selection-end="2355" vertical-scroll-proportion="0.34615386">
               <folding />
             </state>
           </provider>
@@ -181,6 +190,14 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -194,7 +211,7 @@
     <option name="width" value="929" />
     <option name="height" value="1080" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -266,7 +283,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="DBNavigator.Project.Settings" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -349,6 +366,23 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" name="Default" comment="" />
@@ -364,7 +398,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37676767" sideWeight="0.49779248" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21863799" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26161617" sideWeight="0.50215286" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26078027" sideWeight="0.50215286" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988626" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.67011374" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32828283" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
@@ -499,7 +533,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="60" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.5449621">
+        <state line="86" column="0" selection-start="2355" selection-end="2355" vertical-scroll-proportion="0.34615386">
           <folding />
         </state>
       </provider>
