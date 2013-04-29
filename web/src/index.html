@@ -5,43 +5,39 @@
     <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
-    <style>
-        a {
-            font: 10px arial bold;
-            padding-right: 20px;
-            text-decoration: none;
-            color: purple;
-        }
+<style>
+    a {
+        font: 10px arial bold;
+        padding-right: 20px;
+        text-decoration: none;
+        color: purple;
+    }
 
-        svg.chart {
-            /*background-color: gray;*/
-        }
+    svg.chart {
+        /*background-color: gray;*/
+    }
 
-        .chart rect {
-            fill: steelblue;
-            stroke: white;
-            cursor: pointer;
-        }
+    .chart rect {
+        fill: steelblue;
+        stroke: white;
+        cursor: pointer;
+    }
 
-        .chart text.title {
-                    font: 14px arial bold;
-                }
+    .chart text.title {
+                font: 14px arial bold;
+            }
 
-        .chart text.key {
-            font: 10px arial;
-            fill: black;
-        }
+    .chart text.key {
+        font: 10px arial;
+        fill: black;
+    }
 
-        .chart text.value {
-            font: 10px arial bold;
-            fill: steelblue;
-        }
+    .chart text.value {
+        font: 10px arial bold;
+        fill: steelblue;
+    }
 
-    </style>
-
-</head>
-
-<body>
+</style>
 
 <script type="text/javascript" language="javascript">
 
@@ -52,26 +48,26 @@ var data =
                 "statistic_aggregate":{
                     "total_size":400,
                     "average_response_time":16.666666666666668,
-                    "operation_count":12,
-                    "write_ratio":0.5,
-                    "hit_ratio":0.3333333333333333
+                    "operation_count":16,
+                    "write_ratio":0.7,
+                    "hit_ratio":0.1333333333333333
                 }
             },
             {
                 "time_frame":"2013-04-26 23:40",
                 "statistic_aggregate":{
                     "total_size":40,
-                    "average_response_time":16.666666666666668,
-                    "operation_count":12,
-                    "write_ratio":0.5,
-                    "hit_ratio":0.3333333333333333
+                    "average_response_time":1.666666666666668,
+                    "operation_count":2,
+                    "write_ratio":0.2,
+                    "hit_ratio":0.5333333333333333
                 }
             },
             {
                 "time_frame":"2013-04-27 00:10",
                 "statistic_aggregate":{
-                    "total_size":200,
-                    "average_response_time":16.666666666666668,
+                    "total_size":240,
+                    "average_response_time":18.666666666666668,
                     "operation_count":12,
                     "write_ratio":0.5,
                     "hit_ratio":0.3333333333333333
@@ -81,10 +77,10 @@ var data =
                 "time_frame":"2013-04-26 06:05",
                 "statistic_aggregate":{
                     "total_size":340,
-                    "average_response_time":16.666666666666668,
-                    "operation_count":12,
-                    "write_ratio":0.5,
-                    "hit_ratio":0.3333333333333333
+                    "average_response_time":10.666666666666668,
+                    "operation_count":212,
+                    "write_ratio":0.11,
+                    "hit_ratio":0.6333333333333333
                 }
             },
             {
@@ -94,7 +90,7 @@ var data =
                     "average_response_time":16.666666666666668,
                     "operation_count":12,
                     "write_ratio":0.5,
-                    "hit_ratio":0.3333333333333333
+                    "hit_ratio":0.1433333333333333
                 }
             }
         ];
@@ -156,7 +152,9 @@ function draw() {
             .domain([0, d3.max(data.map(valueByTimeFrame))])
             .rangeRound([0, h]);
 
-    chart = d3.select("body").append("svg")
+    //d3.select("body").select(".chart1").remove();
+
+    chart = d3.select("body").select("div").append("svg")
             .attr("class", "chart")
             .attr("width", w * data.length - 1)
             .attr("height", h + t + b);
@@ -199,7 +197,7 @@ function draw() {
             .attr("y2", h + t - .5)
 }
 
-window.onload = draw();
+window.onload = draw;
 
 function redraw(valueFunction) {
     valueByTimeFrame = valueFunction;
@@ -227,7 +225,11 @@ function redraw(valueFunction) {
    //http://mbostock.github.io/d3/tutorial/bar-2.html
 </script>
 
-<div id="chart1">
+</head>
+<body>
+
+<div class="chart1">
+    <a href="#" onclick="draw()">Draw</a>
     <a href="#" onclick="redraw(total_size)">Total size</a>
     <a href="#" onclick="redraw(average_response_time)">Average Response Time</a>
     <a href="#" onclick="redraw(operation_count)">Operation Count</a>

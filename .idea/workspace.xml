@@ -27,7 +27,7 @@
     <list default="true" id="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" name="Default" comment="" />
     <ignored path="d3statistics.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1367245692862" ignored="false" />
+    <file path="/index.html" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1367247793170" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/util/src/com/netledger/util/proxy/NLProxyMethodMetaData.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366885931769" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/util/src/com/netledger/util/proxy/NLAbstractInvalidatableLazyInitializer.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366885931769" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app/htdocs/WEB-INF/web.xml" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1367236386867" ignored="false" />
@@ -178,7 +178,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="0" selection-start="2355" selection-end="2355" vertical-scroll-proportion="0.34615386">
+            <state line="156" column="41" selection-start="4225" selection-end="4225" vertical-scroll-proportion="0.4065934">
               <folding />
             </state>
           </provider>
@@ -533,7 +533,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="2355" selection-end="2355" vertical-scroll-proportion="0.34615386">
+        <state line="156" column="41" selection-start="4225" selection-end="4225" vertical-scroll-proportion="0.4065934">
           <folding />
         </state>
       </provider>
