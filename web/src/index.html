@@ -14,7 +14,7 @@
     }
 
     svg.chart {
-        /*background-color: gray;*/
+        background-color: #e0e0e0;
     }
 
     .chart rect {
@@ -23,9 +23,9 @@
         cursor: pointer;
     }
 
-    .chart text.title {
-                font: 14px arial bold;
-            }
+    .chart_title {
+        font: 14px arial bold;
+    }
 
     .chart text.key {
         font: 10px arial;
@@ -36,7 +36,6 @@
         font: 10px arial bold;
         fill: steelblue;
     }
-
 </style>
 
 <script type="text/javascript" language="javascript">
@@ -102,9 +101,9 @@ Number.prototype.toFixedDown = function(digits) {
 }
 
 var w = 20,
-    h = 150,
-    t = 60,
-    b = 100;
+    h = 150, //he
+    t = 60,  //top
+    b = 100; //below
 
 function total_size(d) {
     return d.statistic_aggregate.total_size;
@@ -139,27 +138,46 @@ var x = d3.scale.linear()
 var chart;
 
 function title() {
-    if (valueByTimeFrame == total_size) return "Total size";
-    if (valueByTimeFrame == average_response_time) return "Average Response Time";
+    if (valueByTimeFrame == total_size) return "Total size [bytes]";
+    if (valueByTimeFrame == average_response_time) return "Average Response Time [ms]";
     if (valueByTimeFrame == operation_count) return "Operation Count";
-    if (valueByTimeFrame == write_ratio) return "Write Ratio";
-    if (valueByTimeFrame == hit_ratio) return "Hit Ratio";
+    if (valueByTimeFrame == write_ratio) return "Write Ratio [%]";
+    if (valueByTimeFrame == hit_ratio) return "Hit Ratio [%]";
     return String(valueByTimeFrame)
 }
 
-function draw() {
+function draw(id) {
+    //hide remaining
+    for (var i = id + 1; i <= 3; i++)
+    {       
+        var chart_id = "#chart" + i
+        console.log(chart_id);
+        var selected = d3.select(chart_id);
+        console.log(selected);
+        selected.attr("style", "background-color: black");
+    }
+
     var y = d3.scale.linear()
             .domain([0, d3.max(data.map(valueByTimeFrame))])
             .rangeRound([0, h]);
 
-    //d3.select("body").select(".chart1").remove();
+    console.log(d3.select("body").select(".svg"));//select(".svg").remove();
+    //d3.select("body").select(".chart1").select("svg").remove();
+    d3.select("#p").attr("style", "background-color: black");
+    d3.select("#p").remove();
 
-    chart = d3.select("body").select("div").append("svg")
+
+    //d3.select("#chart1").remove();
+
+
+    chart = d3.select("body").select(".chart1").append("svg")
             .attr("class", "chart")
+            //.classed("chart")
             .attr("width", w * data.length - 1)
             .attr("height", h + t + b);
 
-    chart.append("text").attr("class", "title")
+    chart.append("text")
+            .attr("class", "chart_title")
             .attr("dy", 10)
             .text(title);
 
@@ -197,7 +215,7 @@ function draw() {
             .attr("y2", h + t - .5)
 }
 
-window.onload = draw;
+
 
 function redraw(valueFunction) {
     valueByTimeFrame = valueFunction;
@@ -222,19 +240,42 @@ function redraw(valueFunction) {
             .text(valueByTimeFrame);
 }
 
+//udelat onclick na fomu - get_by + draw
+window.onload = function() { draw(1); }
+
    //http://mbostock.github.io/d3/tutorial/bar-2.html
 </script>
 
 </head>
 <body>
 
-<div class="chart1">
-    <a href="#" onclick="draw()">Draw</a>
-    <a href="#" onclick="redraw(total_size)">Total size</a>
-    <a href="#" onclick="redraw(average_response_time)">Average Response Time</a>
-    <a href="#" onclick="redraw(operation_count)">Operation Count</a>
-    <a href="#" onclick="redraw(write_ratio)">Write Ratio</a>
-    <a href="#" onclick="redraw(hit_ratio)">Hit Ratio</a>
+<p id="p"><div>TEST P</div></p>
+
+<div id="chart1">
+    <a href="#" onclick="draw(1)">//Draw</a>
+    <a href="#" onclick="redraw(1, total_size)">Total size</a>
+    <a href="#" onclick="redraw(1, average_response_time)">Average Response Time</a>
+    <a href="#" onclick="redraw(1, operation_count)">Operation Count</a>
+    <a href="#" onclick="redraw(1, write_ratio)">Write Ratio</a>
+    <a href="#" onclick="redraw(1, hit_ratio)">Hit Ratio</a>
+</div>
+
+<div id="chart2">
+    <a href="#" onclick="draw(1)">//Draw</a>
+    <a href="#" onclick="redraw(1, total_size)">Total size</a>
+    <a href="#" onclick="redraw(1, average_response_time)">Average Response Time</a>
+    <a href="#" onclick="redraw(1, operation_count)">Operation Count</a>
+    <a href="#" onclick="redraw(1, write_ratio)">Write Ratio</a>
+    <a href="#" onclick="redraw(1, hit_ratio)">Hit Ratio</a>
+</div>
+
+<div id="chart3">
+    <a href="#" onclick="draw(1)">//Draw</a>
+    <a href="#" onclick="redraw(1, total_size)">Total size</a>
+    <a href="#" onclick="redraw(1, average_response_time)">Average Response Time</a>
+    <a href="#" onclick="redraw(1, operation_count)">Operation Count</a>
+    <a href="#" onclick="redraw(1, write_ratio)">Write Ratio</a>
+    <a href="#" onclick="redraw(1, hit_ratio)">Hit Ratio</a>
 </div>
 
 
