@@ -52,7 +52,11 @@
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/scripting/cache/CoherenceSuiteScriptCache.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366973494958" ignored="false" />
     <file path="/a.dummy" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366968398238" ignored="false" />
     <file path="/fragment.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366973154960" ignored="false" />
+<<<<<<< HEAD
     <file path="/Dummy.txt" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1367791663971" ignored="false" />
+=======
+    <file path="/Dummy.txt" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1367327378827" ignored="false" />
+>>>>>>> workspace
     <file path="/CacheValue.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366970585027" ignored="false" />
     <file path="$PROJECT_DIR$/../../../NetLedger_Tapikovo/web-app-core/src/com/netledger/core/scripting/cache/CacheKey.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366973012570" ignored="false" />
     <file path="/CacheKey.java" changelist="9934b75a-d4ee-41e4-8a9b-f99f8c1a6b40" time="1366970597362" ignored="false" />
@@ -129,6 +133,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -163,7 +168,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -176,7 +180,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="180" column="114" selection-start="5244" selection-end="5244" vertical-scroll-proportion="0.8421659">
+            <state line="156" column="41" selection-start="4225" selection-end="4225" vertical-scroll-proportion="0.015974442">
               <folding />
             </state>
           </provider>
@@ -205,10 +209,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="758" />
-    <option name="y" value="52" />
-    <option name="width" value="1162" />
-    <option name="height" value="1024" />
+    <option name="x" value="54" />
+    <option name="y" value="-8" />
+    <option name="width" value="1874" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -531,14 +535,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="41" selection-start="4225" selection-end="4225" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="114" selection-start="5244" selection-end="5244" vertical-scroll-proportion="0.8421659">
+        <state line="156" column="41" selection-start="4225" selection-end="4225" vertical-scroll-proportion="0.015974442">
           <folding />
         </state>
       </provider>
