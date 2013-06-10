@@ -14,7 +14,7 @@
     }
 
     svg.chart {
-        background-color: #e0e0e0; //TODO change to white
+        background-color: #fff; 
     }
 
     .chart rect {
@@ -25,11 +25,12 @@
 
     .chart_title {
         font: 18px arial;
+        fill: #555;
     }
 
     .chart_key {
         font: 10px arial;
-        fill: black;
+        fill: #555;
     }
 
     .chart_value {
@@ -101,65 +102,29 @@ var data =
             }
         ];
 
+//pretty rounding
 Number.prototype.toFixedDown = function(digits) {
-  var n = this - Math.pow(10, -digits)/2;
-  n += n / Math.pow(2, 53); // added 1360765523: 17.56.toFixedDown(2) === "17.56"
-  return n.toFixed(digits);
+  var n = this - Math.pow(10, -digits)/2
+  n += n / Math.pow(2, 53) // added 1360765523: 17.56.toFixedDown(2) === "17.56"
+  return n.toFixed(digits)
 }
 
 //config
 var w = 20,
     h = 150, //heigth
-    t = 50,  //top
-    b = 120; //below
+    t = 60,  //top
+    b = 130  //below
 
 //value functions
-function total_size(d) {
-    return d.statistic_aggregate.total_size;
-}
+function total_size(d) { return d.statistic_aggregate.total_size }
+function average_response_time(d) { return d.statistic_aggregate.average_response_time.toFixedDown(1) }
+function operation_count(d) { return d.statistic_aggregate.operation_count }
+function write_ratio(d) { return (d.statistic_aggregate.write_ratio * 100).toFixedDown(1) }
+function hit_ratio(d) { return (d.statistic_aggregate.hit_ratio * 100).toFixedDown(1) }
 
-function average_response_time(d) {
-    return d.statistic_aggregate.average_response_time.toFixedDown(1);
-}
+var value_functions = [average_response_time, total_size, operation_count, write_ratio, hit_ratio]
 
-function operation_count(d) {
-    return d.statistic_aggregate.operation_count;
-}
-
-function write_ratio(d) {
-    return (d.statistic_aggregate.write_ratio * 100).toFixedDown(1);
-}
-
-function hit_ratio(d) {
-    return (d.statistic_aggregate.hit_ratio * 100).toFixedDown(1);
-}
-
-var value_functions = [total_size, average_response_time, operation_count, write_ratio, hit_ratio]
-
-var valueByTimeFrame = total_size;
-
-//key functions
-function chart_type(id) {
-    if (id == 1) {
-        return {
-            "title": "Statistics by time frame",
-            "key": function(d) { return d.time_frame; }
-        }
-    }
-    return "";
-}
-
-var keyByTimeFrame = function(d) {
-    return d.time_frame;
-};
-
-//TODO next key functions
-
-var x = d3.scale.linear()
-    .domain([0, 1])
-    .rangeRound([0, w]);
-
-function title(f) {
+function function_name(f) {
     if (f == total_size) return "Total size [bytes]";
     if (f == average_response_time) return "Avg. Resp. [ms]";
     if (f == operation_count) return "Operation Count";
@@ -168,105 +133,133 @@ function title(f) {
     return String(f)
 }
 
+//charts configuration
+function chart_type(id) {
+    if (id == 1) {
+        return {
+            "title": function() { return "Statistics by time frame in interval from " + arguments[0] + " to " + arguments[1] },
+            "key": function(d) { return d.time_frame },
+            "get_data": function() { return data }
+        }
+    }
+    if (id == 2) {
+        return {
+            "title": function() { return "Statistics by company in timeframe " + arguments[0] },
+            "key": function(d) { return d.time_frame },
+            "get_data": function() { return data }
+        }
+    }
+    if (id == 3) {
+        return {
+            "title": function() { return "Statistics by metadata for company " + arguments[0] },
+            "key": function(d) { return d.time_frame },
+            "get_data": function() { return data }
+        }
+    }
+}
+
+//calculation for X is always the same
+var x = d3.scale.linear()
+    .domain([0, 1])
+    .rangeRound([0, w]);
+
+//but not for Y
 function calculate_y(f) {
-    console.log(f)
     return d3.scale.linear()
         .domain([0, d3.max(data.map(f))])
-        .rangeRound([0, h]);            
+        .rangeRound([0, h])
 }
 
 function draw(id) {
+    //hide remaining starting from me
+    for (var i = id; i <= 3; i++)
+    {       
+        var chart_id = "#chart" + i
+        var selected = d3.select(chart_id);
+        console.log(selected);
+        selected.attr("style", "display: none");
+    }
+
+    //argument are input for data load and sometimes for next graph
+    var arguments = Array.prototype.slice.call(arguments)
+    arguments.shift();
+    var data = chart_type(id).get_data.apply(null, arguments);
+
     //we always start with this function
     var active_function = average_response_time
 
-    //hide remaining
-    // for (var i = id + 1; i <= 3; i++)
-    // {       
-    //     var chart_id = "#chart" + i
-    //     console.log(chart_id);
-    //     var selected = d3.select(chart_id);
-    //     console.log(selected);
-    //     selected.attr("style", "background-color: black");
-    // }
-
-    // var y = d3.scale.linear()
-    //         .domain([0, d3.max(data.map(valueByTimeFrame))])
-    //         .rangeRound([0, h]);
-
-    // console.log(d3.select("body").select(".svg"));//select(".svg").remove();
-    // //d3.select("body").select(".chart1").select("svg").remove();
-    // d3.select("#p2").attr("style", "background-color: GRAY");
-    // //d3.select("#p2").remove();
-
-
-    // //d3.select("#chart1").remove();
-
-    //create the graph
+    //setup the graph
     var chart_id = "#chart" + id
     var chart_width = w * data.length - 1
-    var chart = d3.select("body").select(chart_id).append("svg")
+    var chart = d3.select("body").select(chart_id).select("svg")    
             .attr("class", "chart")
-            //.classed("chart")
             .attr("width", Math.max(chart_width, 600)) //always have space for 
             .attr("height", h + t + b)
 
-    //title by active function            
+    //title by chart
+    chart.selectAll(".chart_title").remove()
     chart.append("text")
             .attr("class", "chart_title")
-            .attr("dy", 14)
-            .text(chart_type(id).title)
+            .attr("dy", 24)
+            .text(chart_type(id).title.apply(null, arguments))
 
     //Y will be used for bars and values
     var y = calculate_y(active_function)    
 
     //bars            
-    chart.selectAll("rect")  //by html5 tag
+    var chart_bar = chart.selectAll("rect")  //by html5 tag
             .data(data)
-            .enter().append("rect")
-            .attr("x", function(d, i) { return x(i) - .5; })
-            .attr("y", function(d) { return h + t - y(active_function(d)) - .5; })
+    chart_bar.enter().append("rect")
+            .attr("x", function(d, i) { return x(i) - .5 })
+            .attr("y", function(d) { return h + t - y(active_function(d)) - .5 })
             .attr("width", w)
-            .attr("height", function(d) { return y(active_function(d)); })
-            .attr("onclick", function(d) { return "alert('" + active_function(d) + "'); draw(" + (id + 1) + ", '" + chart_type(id).key(d) + "')"; }) //TODO next graph
+            .attr("height", function(d) { return y(active_function(d)) })
+            .attr("onclick", function(d) { return "draw(" + (id + 1) + ", '" + (chart_type(id).key(d)) + "')" })
+    chart_bar.exit().remove()            
 
     //value labels
-    chart.selectAll(".chart_value")  //by CSS class
+    var chart_value = chart.selectAll(".chart_value")  //by CSS class
             .data(data)
-            .enter().append("text").attr("class", "chart_value")
+    chart_value.enter().append("text").attr("class", "chart_value")
             .attr("dx", 6)
             .attr("dy", 13)
             .attr("text-anchor", "begin") // text-align: right
-            .attr("transform", function(d, i) { return "translate(" + x(i) + " " + (h + t - y(active_function(d))) + ") rotate (-90) "; })
-            .text(valueByTimeFrame)
+            .attr("transform", function(d, i) { return "translate(" + x(i) + " " + (h + t - y(active_function(d))) + ") rotate (-90) " })
+            .text(active_function)
+    chart_value.exit().remove()            
 
-    //key labels
-    chart.selectAll(".chart_key")  //by CSS class
+    //key labels - 
+    var chart_key = chart.selectAll(".chart_key")  //by CSS class
             .data(data)
-            .enter().append("text").attr("class", "chart_key")
+    chart_key.enter().append("text").attr("class", "chart_key")
             //.attr("dx", 14) //has no effect!
             .attr("dy", 13)
             .attr("text-anchor", "end") // text-align: right
-            .attr("transform", function(d, i) { return "translate(" + x(i) + " " + (h + t + 2) + ") rotate (-90) "; })
-            //.text(keyByTimeFrame)
-            //.text(function (d) { return chart_type(id).key(d); })
+            .attr("transform", function(d, i) { return "translate(" + x(i) + " " + (h + t + 2) + ") rotate (-90) " })
             .text(chart_type(id).key)
+    chart_key.exit().remove()                        
 
     //'zero' line
+    chart.selectAll("line").remove()
     chart.append("line")  //html5 tag
             .attr("x1", 0)
-            .attr("x2", w * data.length)
+            .attr("x2", w * data.length - 1)
             .attr("y1", h + t - .5)
             .attr("y2", h + t - .5)
+            .style("stroke", "#555")
 
     //create links    
     chart.selectAll(".chart_link")  //by html tag
             .data(value_functions)
             .enter().append("text").attr("class", "chart_link")
-            .style("font-weight", function (d) { return active_function == d ? "bold" : ""; })
-            .attr("dy", h + t + b - 10)
+            .style("font-weight", function (d) { return active_function == d ? "bold" : "" })
+            .attr("dy", h + t + b - 20)
             .attr("dx", function (d, i) { return i * 120; })
-            .attr("onclick", function(d) { return "redraw(" + id + ", " + d.name + ")"; }) 
-            .text(function (d) { return title(d); })
+            .attr("onclick", function(d) { return "redraw(" + id + ", " + d.name + ")" }) 
+            .text(function (d) { return function_name(d) })
+
+    //make me visible as the last thing
+    d3.select(chart_id).attr("style", "display: block");            
 }
 
 function redraw(id, active_function) {
@@ -274,32 +267,28 @@ function redraw(id, active_function) {
     var chart_id = "#chart" + id
     var chart = d3.select("body").select(chart_id)
 
-    //title changed according to 
-    chart.select(".chart_title")
-            .text(title(active_function));
-
     //resize bar            
-    var y = calculate_y(active_function);    
+    var y = calculate_y(active_function)
     chart.selectAll("rect")
             .data(data)
             .transition().duration(500)
             .attr("y", function(d) { return h + t - y(active_function(d)) - .5; })
-            .attr("height", function(d) { return y(active_function(d)); });
+            .attr("height", function(d) { return y(active_function(d)) })
 
     //change position and label of the value
     chart.selectAll(".chart_value")
             .data(data)
             .transition().duration(500)
-            .attr("transform", function(d, i) { return "translate(" + x(i) + " " + (h + t - y(active_function(d))) + ") rotate (-90) "; })
-            .text(active_function);
+            .attr("transform", function(d, i) { return "translate(" + x(i) + " " + (h + t - y(active_function(d))) + ") rotate (-90) " })
+            .text(active_function)
 
     //make active function bold            
     chart.selectAll(".chart_link")  //by html tag
-            .style("font-weight", function (d) { return active_function == d ? "bold" : ""; })
+            .style("font-weight", function (d) { return active_function == d ? "bold" : "" })
 }
 
 //udelat onclick na fomu - get_by + draw
-window.onload = function() { draw(1); }
+window.onload = function() { draw(1, "from", "to") } //replace by call from page
 
    //http://mbostock.github.io/d3/tutorial/bar-2.html
 </script>
@@ -307,17 +296,18 @@ window.onload = function() { draw(1); }
 </head>
 <body>
 
-<!-- <p id="p1"><div>TEST P 1</div></p>
-<p id="p2">TEST P 2</p>
- -->
 <div id="chart1">
-    <a href="#" onclick="draw(1)">//Draw</a>
-    <a href="#" onclick="redraw(1, total_size)">Total size</a>
-    <a href="#" onclick="redraw(1, average_response_time)">Average Response Time</a>
-    <a href="#" onclick="redraw(1, operation_count)">Operation Count</a>
-    <a href="#" onclick="redraw(1, write_ratio)">Write Ratio</a>
-    <a href="#" onclick="redraw(1, hit_ratio)">Hit Ratio</a>
+    <svg />
 </div>
+
+<div id="chart2">
+    <svg />
+</div>
+
+<div id="chart3">
+    <svg />
+</div>
+
 
 <!-- <div id="chart2">
     <a href="#" onclick="draw(1)">//Draw</a>
